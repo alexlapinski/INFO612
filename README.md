@@ -1,0 +1,1 @@
+The cbr system we'll be using is http://mycbr-project.net/
