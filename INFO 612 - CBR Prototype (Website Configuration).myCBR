@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="INFO 612 - CBR Prototype (Website Configuration)" author="" >
+<svs>
+  <sv name="_others_"/>
+  <sv name="_unknown_"/>
+  <sv name="_undefined_"/>
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_others_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+</fct>
+</svs>
+<model>
+  <concept name="Website">
+    <desc name="Problem" type="Concept" concept="Requirements" mult="false" >
+      <mc fct="default function" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Solution" type="Concept" concept="Configuration" mult="false" >
+      <mc fct="default function" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <amalgam name="default function" type="EUCLIDEAN" active="true" >
+      <entry name="Problem" active="true" fct="default function" weight="1.0"/>
+      <entry name="Solution" active="true" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+  <concept name="Configuration">
+    <desc name="Server Operating System" type="Symbol" mult="false" >
+      <symbol value="Linux" />
+      <symbol value="Windows" />
+      <symbol value="OS X" />
+      <symbol value="BSD" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Linux">
+</qsym>
+<qsym name="Windows">
+</qsym>
+<qsym name="OS X">
+</qsym>
+<qsym name="BSD">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Content Management System" type="Symbol" mult="false" >
+      <symbol value="OpenCMS" />
+      <symbol value="Liferay" />
+      <symbol value="Drupal" />
+      <symbol value="Sitecore" />
+      <symbol value="None" />
+      <symbol value="Django" />
+      <symbol value="Ektron" />
+      <symbol value="Plone" />
+      <symbol value="Movable Type" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="OpenCMS">
+</qsym>
+<qsym name="Liferay">
+</qsym>
+<qsym name="Drupal">
+</qsym>
+<qsym name="Sitecore">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="Django">
+</qsym>
+<qsym name="Ektron">
+</qsym>
+<qsym name="Plone">
+</qsym>
+<qsym name="Movable Type">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Database" type="Symbol" mult="false" >
+      <symbol value="PostgreSQL" />
+      <symbol value="MySQL" />
+      <symbol value="Oracle SQL Server" />
+      <symbol value="IBM SQL Server" />
+      <symbol value="VelocityDB" />
+      <symbol value="MongoDB" />
+      <symbol value="Cache" />
+      <symbol value="None" />
+      <symbol value="SQLite" />
+      <symbol value="Micosoft SQL Server" />
+      <symbol value="CouchDB" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="PostgreSQL">
+</qsym>
+<qsym name="MySQL">
+</qsym>
+<qsym name="Oracle SQL Server">
+</qsym>
+<qsym name="IBM SQL Server">
+</qsym>
+<qsym name="VelocityDB">
+</qsym>
+<qsym name="MongoDB">
+</qsym>
+<qsym name="Cache">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="SQLite">
+</qsym>
+<qsym name="Micosoft SQL Server">
+</qsym>
+<qsym name="CouchDB">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Web Server" type="Symbol" mult="false" >
+      <symbol value="nginx" />
+      <symbol value="Apache" />
+      <symbol value="node" />
+      <symbol value="lighthttp" />
+      <symbol value="IIS 6" />
+      <symbol value="Tomcat" />
+      <symbol value="IIS 7" />
+      <symbol value="IIS 7.5" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="nginx">
+</qsym>
+<qsym name="Apache">
+</qsym>
+<qsym name="node">
+</qsym>
+<qsym name="lighthttp">
+</qsym>
+<qsym name="IIS 6">
+</qsym>
+<qsym name="Tomcat">
+</qsym>
+<qsym name="IIS 7">
+</qsym>
+<qsym name="IIS 7.5">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Client-Side Framework" type="Symbol" mult="true" >
+      <symbol value="JQuery Mobile" />
+      <symbol value="Prototype" />
+      <symbol value="Dojo" />
+      <symbol value="RaphaelJS" />
+      <symbol value="Bootstrap" />
+      <symbol value="RequireJS" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="JQuery Mobile">
+</qsym>
+<qsym name="Prototype">
+</qsym>
+<qsym name="Dojo">
+</qsym>
+<qsym name="RaphaelJS">
+</qsym>
+<qsym name="Bootstrap">
+</qsym>
+<qsym name="RequireJS">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Video Service" type="Symbol" mult="false" >
+      <symbol value="None" />
+      <symbol value="Brightcove" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="None">
+</qsym>
+<qsym name="Brightcove">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Programming Language" type="Symbol" mult="false" >
+      <symbol value="Javascript" />
+      <symbol value="Visual Basic" />
+      <symbol value="C#" />
+      <symbol value="PHP" />
+      <symbol value="Ruby" />
+      <symbol value="Perl" />
+      <symbol value="Python" />
+      <symbol value="Java" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Javascript">
+</qsym>
+<qsym name="Visual Basic">
+</qsym>
+<qsym name="C#">
+</qsym>
+<qsym name="PHP">
+</qsym>
+<qsym name="Ruby">
+</qsym>
+<qsym name="Perl">
+</qsym>
+<qsym name="Python">
+</qsym>
+<qsym name="Java">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Server-Side Framework" type="Symbol" mult="false" >
+      <symbol value="CherryPy" />
+      <symbol value="Flat (Templates Only)" />
+      <symbol value="node.js" />
+      <symbol value="Flask" />
+      <symbol value="CakePHP" />
+      <symbol value="Drupal" />
+      <symbol value="Apache Struts" />
+      <symbol value="ASP.NET MVC" />
+      <symbol value="Django" />
+      <symbol value="ASP.NET Web Forms" />
+      <symbol value="Java Server Faces" />
+      <symbol value="Ruby on Rails" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="CherryPy">
+</qsym>
+<qsym name="Flat (Templates Only)">
+</qsym>
+<qsym name="node.js">
+</qsym>
+<qsym name="Flask">
+</qsym>
+<qsym name="CakePHP">
+</qsym>
+<qsym name="Drupal">
+</qsym>
+<qsym name="Apache Struts">
+</qsym>
+<qsym name="ASP.NET MVC">
+</qsym>
+<qsym name="Django">
+</qsym>
+<qsym name="ASP.NET Web Forms">
+</qsym>
+<qsym name="Java Server Faces">
+</qsym>
+<qsym name="Ruby on Rails">
+</qsym>
+</fct>
+    </desc>
+    <amalgam name="default function" type="EUCLIDEAN" active="true" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1.0"/>
+      <entry name="Content Management System" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="1.0"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Client-Side Framework" active="true" fct="default function" weight="1.0"/>
+      <entry name="Video Service" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1.0"/>
+      <entry name="Server-Side Framework" active="true" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+  <concept name="Requirements">
+    <desc name="Server Operating System" type="Symbol" mult="false" >
+      <symbol value="Windows" />
+      <symbol value="Linux" />
+      <symbol value="Any" />
+      <symbol value="OS X" />
+      <symbol value="BSD" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Windows">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Linux">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="Windows" sim="0.5"/>
+<csym name="Linux" sim="0.5"/>
+<csym name="OS X" sim="0.5"/>
+<csym name="BSD" sim="0.5"/>
+</qsym>
+<qsym name="OS X">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="BSD">
+<csym name="Any" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Content Change Frequency (# updates per week)" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Monthly Maintenence Budget" type="Integer" min="0" max="10000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Maintenence Staff" type="Integer" min="0" max="30" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Database" type="Symbol" mult="false" >
+      <symbol value="PostgreSQL" />
+      <symbol value="MySQL" />
+      <symbol value="Any" />
+      <symbol value="Oracle SQL Server" />
+      <symbol value="IBM SQL Server" />
+      <symbol value="VelocityDB" />
+      <symbol value="MongoDB" />
+      <symbol value="Microsoft SQL Server" />
+      <symbol value="Cache" />
+      <symbol value="None" />
+      <symbol value="SQLite" />
+      <symbol value="CouchDB" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="PostgreSQL">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="MySQL">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="PostgreSQL" sim="0.5"/>
+<csym name="MySQL" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.5"/>
+<csym name="IBM SQL Server" sim="0.5"/>
+<csym name="VelocityDB" sim="0.5"/>
+<csym name="MongoDB" sim="0.5"/>
+<csym name="Microsoft SQL Server" sim="0.5"/>
+<csym name="Cache" sim="0.5"/>
+<csym name="None" sim="0.5"/>
+<csym name="SQLite" sim="0.5"/>
+<csym name="CouchDB" sim="0.5"/>
+</qsym>
+<qsym name="Oracle SQL Server">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IBM SQL Server">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="VelocityDB">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="MongoDB">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Microsoft SQL Server">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Cache">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="None">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="SQLite">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="CouchDB">
+<csym name="Any" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Web Server" type="Symbol" mult="false" >
+      <symbol value="nginx" />
+      <symbol value="Apache" />
+      <symbol value="Any" />
+      <symbol value="node" />
+      <symbol value="lighthttp" />
+      <symbol value="IIS 6" />
+      <symbol value="Tomcat" />
+      <symbol value="IIS 7" />
+      <symbol value="IIS 7.5" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="nginx">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Apache">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="nginx" sim="0.5"/>
+<csym name="Apache" sim="0.5"/>
+<csym name="node" sim="0.5"/>
+<csym name="lighthttp" sim="0.5"/>
+<csym name="IIS 6" sim="0.5"/>
+<csym name="Tomcat" sim="0.5"/>
+<csym name="IIS 7" sim="0.5"/>
+<csym name="IIS 7.5" sim="0.5"/>
+</qsym>
+<qsym name="node">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="lighthttp">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IIS 6">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Tomcat">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IIS 7">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IIS 7.5">
+<csym name="Any" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Programming Language" type="Symbol" mult="false" >
+      <symbol value="Javascript" />
+      <symbol value="Any" />
+      <symbol value="Visual Basic" />
+      <symbol value="C#" />
+      <symbol value="PHP" />
+      <symbol value="Ruby" />
+      <symbol value="Perl" />
+      <symbol value="Python" />
+      <symbol value="Java" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Javascript">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="Javascript" sim="0.5"/>
+<csym name="Visual Basic" sim="0.5"/>
+<csym name="C#" sim="0.5"/>
+<csym name="PHP" sim="0.5"/>
+<csym name="Ruby" sim="0.5"/>
+<csym name="Perl" sim="0.5"/>
+<csym name="Python" sim="0.5"/>
+<csym name="Java" sim="0.5"/>
+</qsym>
+<qsym name="Visual Basic">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="C#">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="PHP">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Ruby">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Perl">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Python">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Java">
+<csym name="Any" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Expected Traffic (Page views Per Hour)" type="Integer" min="0" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Number of Videos" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Concurrent Taffic (# of concurrent users)" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Minimum Browser" type="Symbol" mult="true" >
+      <symbol value="IE8" />
+      <symbol value="IE9" />
+      <symbol value="Safari (Latest)" />
+      <symbol value="Firefox (Latest)" />
+      <symbol value="IE6" />
+      <symbol value="IE7" />
+      <symbol value="Chrome (Latest)" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="IE8">
+</qsym>
+<qsym name="IE9">
+</qsym>
+<qsym name="Safari (Latest)">
+</qsym>
+<qsym name="Firefox (Latest)">
+</qsym>
+<qsym name="IE6">
+</qsym>
+<qsym name="IE7">
+</qsym>
+<qsym name="Chrome (Latest)">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Expected Number of Users" type="Integer" min="0" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Initial Budget" type="Integer" min="1000" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Type of Video Required" type="Symbol" mult="false" >
+      <symbol value="Streaming" />
+      <symbol value="Static" />
+      <symbol value="None" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Streaming">
+</qsym>
+<qsym name="Static">
+</qsym>
+<qsym name="None">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Mobile Support" type="Symbol" mult="false" >
+      <symbol value="Mobile Optimized" />
+      <symbol value="None" />
+      <symbol value="Mobile Viewable" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="false">
+<qsym name="Mobile Optimized">
+<csym name="Mobile Viewable" sim="0.5"/>
+</qsym>
+<qsym name="None">
+<csym name="Mobile Viewable" sim="0.5"/>
+</qsym>
+<qsym name="Mobile Viewable">
+</qsym>
+</fct>
+    </desc>
+    <amalgam name="default function" type="EUCLIDEAN" active="true" >
+      <entry name="Content Change Frequency (# updates per week)" active="true" fct="default function" weight="1.0"/>
+      <entry name="Server Operating System" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Monthly Maintenence Budget" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="1.0"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1.0"/>
+      <entry name="Number of Videos" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Traffic (Page views Per Hour)" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Concurrent Taffic (# of concurrent users)" active="true" fct="default function" weight="1.0"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Number of Users" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Initial Budget" active="true" fct="default function" weight="1.0"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="1.0"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+</model>
+<hierarchy>
+  <fct name="default function" type="Taxonomy" mt="PARTNER_QUERY" r="REUSE" t="MAX" qconfig="INNER_NODES_ANY" cconfig="INNER_NODES_ANY" top="inheritanceDesc" sim="0.0" symm="true" >
+    <node name="Configuration" sim="1.0" parent="inheritanceDesc" />
+    <node name="Requirements" sim="1.0" parent="inheritanceDesc" />
+    <node name="Website" sim="1.0" parent="inheritanceDesc" />
+  </fct>
+</hierarchy>
+<cases no="0" cb="Initial Case Base"/>
+</Project>
