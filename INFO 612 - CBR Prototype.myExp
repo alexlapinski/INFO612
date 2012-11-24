@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="INFO 612 - CBR Prototype" author="Joe Raczkowski, Alex Lapinski, Surya Medepalli" >
+<exp obj="Configuration" type="Concept" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Website" type="Concept" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Requirements" type="Concept" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Mobile Support" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max Traffic - Calculation" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Web Server" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max Traffic (Page views Per Hour) - Estimation" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Problem" c="Website" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Server-Side Framework" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Database" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Programming Language" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Expected Initial Budget" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Number of Videos" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Type of Video Required" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Database" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Server Operating System" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max User Base - Estimation Confidence" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Max Concurrent Traffic - Estimation Confidence" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Web Server" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Content Change Frequency (# updates per week)" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Content Management System" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Expected Monthly Maintenence Budget" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Expected Maintenence Staff" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max Traffic - Estimation Confidence" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Max User Base - Calculation" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Max Concurrent Taffic (# of concurrent users) - Estimation" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Programming Language" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max User Base - Estimation" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Video Service" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Solution" c="Website" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Minimum Browser" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Server Operating System" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+<exp obj="Max Concurrent Traffic - Calculated" c="Requirements" type="AttributeDesc" >
+  <desc>
+&#10;        </desc>
+</exp>
+<exp obj="Client-Side Framework" c="Configuration" type="AttributeDesc" >
+  <desc>
+&#10;            </desc>
+</exp>
+</Project>

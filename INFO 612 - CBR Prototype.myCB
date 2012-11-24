@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="INFO 612 - CBR Prototype" author="Joe Raczkowski, Alex Lapinski, Surya Medepalli" >
+<instances name="Website">
+  <instance id="Website #0" >
+    <att name="Problem" value="Requirements #0" />
+    <att name="Solution" value="Configuration #0" />
+  </instance>
+</instances>
+<instances name="Configuration">
+  <instance id="Configuration #0" >
+    <att name="Programming Language" value="Python" />
+    <att name="Server-Side Framework" value="Django" />
+    <att name="Database" value="MySQL" />
+    <att name="Content Management System" value="Django" />
+    <att name="Video Service" value="None" />
+    <att name="Web Server" value="Apache" />
+    <att name="Client-Side Framework" value="Bootstrap;" />
+    <att name="Server Operating System" value="Linux" />
+  </instance>
+</instances>
+<instances name="Requirements">
+  <instance id="Requirements #0" >
+  </instance>
+</instances>
+<cb name="Default Case Base">
+</cb>
+</Project>
