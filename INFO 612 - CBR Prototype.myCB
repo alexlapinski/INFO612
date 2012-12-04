@@ -2,390 +2,391 @@
 <Project name="INFO 612 - CBR Prototype" author="Joe Raczkowski, Alex Lapinski, Surya Medepalli" >
 <instances name="Website">
   <instance id="Website4" >
-    <att name="Solution" value="Configuration4" />
     <att name="Problem" value="Requirements4" />
+    <att name="Solution" value="Configuration4" />
   </instance>
   <instance id="Website3" >
-    <att name="Solution" value="Configuration3" />
     <att name="Problem" value="Requirements3" />
+    <att name="Solution" value="Configuration3" />
   </instance>
   <instance id="Website6" >
-    <att name="Solution" value="Configuration6" />
     <att name="Problem" value="Requirements6" />
+    <att name="Solution" value="Configuration6" />
   </instance>
   <instance id="Website5" >
-    <att name="Solution" value="Configuration5" />
     <att name="Problem" value="Requirements5" />
+    <att name="Solution" value="Configuration5" />
   </instance>
   <instance id="Website8" >
-    <att name="Solution" value="Configuration8" />
     <att name="Problem" value="Requirements8" />
+    <att name="Solution" value="Configuration8" />
   </instance>
   <instance id="Website7" >
-    <att name="Solution" value="Configuration7" />
     <att name="Problem" value="Requirements7" />
+    <att name="Solution" value="Configuration7" />
   </instance>
   <instance id="Website9" >
-    <att name="Solution" value="Configuration9" />
     <att name="Problem" value="Requirements9" />
+    <att name="Solution" value="Configuration9" />
   </instance>
   <instance id="Website0" >
-    <att name="Solution" value="Configuration0" />
     <att name="Problem" value="Requirements0" />
+    <att name="Solution" value="Configuration0" />
   </instance>
   <instance id="Website2" >
-    <att name="Solution" value="Configuration2" />
     <att name="Problem" value="Requirements2" />
+    <att name="Solution" value="Configuration2" />
   </instance>
   <instance id="Website1" >
-    <att name="Solution" value="Configuration1" />
     <att name="Problem" value="Requirements1" />
+    <att name="Solution" value="Configuration1" />
   </instance>
 </instances>
 <instances name="Configuration">
   <instance id="Configuration0" >
-    <att name="Server-Side Framework" value="Django" />
-    <att name="Video Service" value="None" />
-    <att name="Database" value="MySQL" />
-    <att name="Content Management System" value="Django" />
-    <att name="Programming Language" value="Python" />
-    <att name="Web Server" value="Apache" />
-    <att name="Client-Side Framework" value="Bootstrap;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="None" />
+    <att name="Content Management System" value="Django" />
+    <att name="Web Server" value="Apache" />
+    <att name="Database" value="MySQL" />
+    <att name="Client-Side Framework" value="Bootstrap;" />
+    <att name="Programming Language" value="Python" />
+    <att name="Server-Side Framework" value="Django" />
   </instance>
   <instance id="Configuration1" >
-    <att name="Server-Side Framework" value="ASP.NET MVC" />
-    <att name="Video Service" value="None" />
-    <att name="Database" value="Microsoft SQL Server" />
-    <att name="Content Management System" value="Sitecore" />
-    <att name="Programming Language" value="C#" />
-    <att name="Web Server" value="IIS 7.5" />
-    <att name="Client-Side Framework" value="Bootstrap;JQuery;JQuery Mobile;RequireJS;" />
     <att name="Server Operating System" value="Windows" />
+    <att name="Video Service" value="None" />
+    <att name="Content Management System" value="Sitecore" />
+    <att name="Web Server" value="IIS 7.5" />
+    <att name="Database" value="Microsoft SQL Server" />
+    <att name="Client-Side Framework" value="Bootstrap;JQuery;JQuery Mobile;RequireJS;" />
+    <att name="Programming Language" value="C#" />
+    <att name="Server-Side Framework" value="ASP.NET MVC" />
   </instance>
   <instance id="Configuration4" >
-    <att name="Server-Side Framework" value="ASP.NET MVC" />
-    <att name="Video Service" value="None" />
-    <att name="Database" value="Oracle SQL Server" />
-    <att name="Content Management System" value="Sitecore" />
-    <att name="Programming Language" value="C#" />
-    <att name="Web Server" value="IIS 7" />
-    <att name="Client-Side Framework" value="Bootstrap;JQuery;" />
     <att name="Server Operating System" value="Windows" />
+    <att name="Video Service" value="None" />
+    <att name="Content Management System" value="Sitecore" />
+    <att name="Web Server" value="IIS 7" />
+    <att name="Database" value="Oracle SQL Server" />
+    <att name="Client-Side Framework" value="Bootstrap;JQuery;" />
+    <att name="Programming Language" value="C#" />
+    <att name="Server-Side Framework" value="ASP.NET MVC" />
   </instance>
   <instance id="Configuration5" >
-    <att name="Server-Side Framework" value="ASP.NET Web Forms" />
-    <att name="Video Service" value="Zencoder" />
-    <att name="Database" value="MySQL" />
-    <att name="Content Management System" value="Sitecore" />
-    <att name="Programming Language" value="C#" />
-    <att name="Web Server" value="IIS 7.5" />
-    <att name="Client-Side Framework" value="Bootstrap;JQuery;VideoJS;" />
     <att name="Server Operating System" value="Windows" />
+    <att name="Video Service" value="Zencoder" />
+    <att name="Content Management System" value="Sitecore" />
+    <att name="Web Server" value="IIS 7.5" />
+    <att name="Database" value="MySQL" />
+    <att name="Client-Side Framework" value="Bootstrap;JQuery;VideoJS;" />
+    <att name="Programming Language" value="C#" />
+    <att name="Server-Side Framework" value="ASP.NET Web Forms" />
   </instance>
   <instance id="Configuration2" >
-    <att name="Server-Side Framework" value="Drupal" />
-    <att name="Video Service" value="Zencoder" />
-    <att name="Database" value="MySQL" />
-    <att name="Content Management System" value="Drupal" />
-    <att name="Programming Language" value="PHP" />
-    <att name="Web Server" value="Apache" />
-    <att name="Client-Side Framework" value="JQuery;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="Zencoder" />
+    <att name="Content Management System" value="Drupal" />
+    <att name="Web Server" value="Apache" />
+    <att name="Database" value="MySQL" />
+    <att name="Client-Side Framework" value="JQuery;" />
+    <att name="Programming Language" value="PHP" />
+    <att name="Server-Side Framework" value="Drupal" />
   </instance>
   <instance id="Configuration3" >
-    <att name="Server-Side Framework" value="Ruby on Rails" />
-    <att name="Video Service" value="Zencoder" />
-    <att name="Database" value="PostgreSQL" />
-    <att name="Content Management System" value="Ruby on Rails" />
-    <att name="Programming Language" value="Ruby" />
-    <att name="Web Server" value="Apache" />
-    <att name="Client-Side Framework" value="Bootstrap;VideoJS;JQuery;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="Zencoder" />
+    <att name="Content Management System" value="Ruby on Rails" />
+    <att name="Web Server" value="Apache" />
+    <att name="Database" value="PostgreSQL" />
+    <att name="Client-Side Framework" value="Bootstrap;VideoJS;JQuery;" />
+    <att name="Programming Language" value="Ruby" />
+    <att name="Server-Side Framework" value="Ruby on Rails" />
   </instance>
   <instance id="Configuration7" >
-    <att name="Server-Side Framework" value="None" />
-    <att name="Video Service" value="Zencoder" />
-    <att name="Database" value="PostgreSQL" />
-    <att name="Content Management System" value="Liferay" />
-    <att name="Programming Language" value="Java" />
-    <att name="Web Server" value="Tomcat" />
-    <att name="Client-Side Framework" value="JQuery;VideoJS;Bootstrap;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="Zencoder" />
+    <att name="Content Management System" value="Liferay" />
+    <att name="Web Server" value="Tomcat" />
+    <att name="Database" value="PostgreSQL" />
+    <att name="Client-Side Framework" value="JQuery;VideoJS;Bootstrap;" />
+    <att name="Programming Language" value="Java" />
+    <att name="Server-Side Framework" value="None" />
   </instance>
   <instance id="Configuration6" >
-    <att name="Server-Side Framework" value="None" />
-    <att name="Video Service" value="None" />
-    <att name="Database" value="MySQL" />
-    <att name="Content Management System" value="OpenCMS" />
-    <att name="Programming Language" value="Java" />
-    <att name="Web Server" value="Tomcat" />
-    <att name="Client-Side Framework" value="JQuery;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="None" />
+    <att name="Content Management System" value="OpenCMS" />
+    <att name="Web Server" value="Tomcat" />
+    <att name="Database" value="MySQL" />
+    <att name="Client-Side Framework" value="JQuery;" />
+    <att name="Programming Language" value="Java" />
+    <att name="Server-Side Framework" value="None" />
   </instance>
   <instance id="Configuration9" >
-    <att name="Server-Side Framework" value="CakePHP" />
-    <att name="Video Service" value="None" />
-    <att name="Database" value="MySQL" />
-    <att name="Content Management System" value="CakePHP" />
-    <att name="Programming Language" value="PHP" />
-    <att name="Web Server" value="Apache" />
-    <att name="Client-Side Framework" value="Bootstrap;JQuery;VideoJS;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="None" />
+    <att name="Content Management System" value="CakePHP" />
+    <att name="Web Server" value="Apache" />
+    <att name="Database" value="MySQL" />
+    <att name="Client-Side Framework" value="Bootstrap;JQuery;VideoJS;" />
+    <att name="Programming Language" value="PHP" />
+    <att name="Server-Side Framework" value="CakePHP" />
   </instance>
   <instance id="Configuration8" >
-    <att name="Server-Side Framework" value="Drupal" />
-    <att name="Video Service" value="Zencoder" />
-    <att name="Database" value="CouchDB" />
-    <att name="Content Management System" value="Drupal" />
-    <att name="Programming Language" value="PHP" />
-    <att name="Web Server" value="Apache" />
-    <att name="Client-Side Framework" value="Bootstrap;VideoJS;JQuery;" />
     <att name="Server Operating System" value="Linux" />
+    <att name="Video Service" value="Zencoder" />
+    <att name="Content Management System" value="Drupal" />
+    <att name="Web Server" value="Apache" />
+    <att name="Database" value="CouchDB" />
+    <att name="Client-Side Framework" value="Bootstrap;VideoJS;JQuery;" />
+    <att name="Programming Language" value="PHP" />
+    <att name="Server-Side Framework" value="Drupal" />
   </instance>
 </instances>
 <instances name="Requirements">
   <instance id="Requirements9" >
-    <att name="Programming Language" value="PHP" />
-    <att name="Type of Video Required" value="Static" />
-    <att name="Database" value="Any" />
-    <att name="Expected Monthly Maintenance Budget" value="750" />
-    <att name="Max Concurrent Traffic - Calculation" value="6" />
-    <att name="Max Traffic - Estimation Confidence" value="0.1" />
-    <att name="Max Traffic - Estimation" value="10" />
     <att name="Number of Videos" value="50" />
-    <att name="Max User Base - Estimation Confidence" value="0.25" />
-    <att name="Expected Maintenence Staff" value="0" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.1" />
-    <att name="Max Traffic - Calculation" value="140" />
-    <att name="Server Operating System" value="Any" />
-    <att name="Max Concurrent Traffic - Estimation" value="2" />
-    <att name="Max User Base - Estimation" value="1000" />
-    <att name="Max User Base - Calculation" value="6065" />
-    <att name="Minimum Browser" value="Firefox;" />
-    <att name="Expected Initial Budget" value="10000" />
-    <att name="Mobile Support" value="Mobile Viewable" />
     <att name="Content Change Frequency" value="25" />
+    <att name="Type of Video Required" value="Static" />
+    <att name="Expected Monthly Maintenance Budget" value="750" />
+    <att name="Max Traffic - Calculation" value="140" />
+    <att name="Minimum Browser" value="Firefox;" />
+    <att name="Max Concurrent Traffic - Estimation" value="2" />
+    <att name="Mobile Support" value="Mobile Viewable" />
+    <att name="Max Concurrent Traffic - Calculation" value="6" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.1" />
+    <att name="Max Traffic - Estimation" value="10" />
+    <att name="Server Operating System" value="Any" />
+    <att name="Database" value="Any" />
+    <att name="Max Traffic - Estimation Confidence" value="0.1" />
+    <att name="Max User Base - Estimation" value="1000" />
+    <att name="Programming Language" value="PHP" />
+    <att name="Max User Base - Estimation Confidence" value="0.25" />
+    <att name="Max User Base - Calculation" value="6065" />
+    <att name="Expected Initial Budget" value="10000" />
     <att name="Web Server" value="Any" />
+    <att name="Expected Maintenence Staff" value="0" />
   </instance>
   <instance id="Requirements8" >
-    <att name="Programming Language" value="PHP" />
-    <att name="Type of Video Required" value="Static" />
-    <att name="Database" value="CouchDB" />
-    <att name="Expected Monthly Maintenance Budget" value="2500" />
-    <att name="Max Concurrent Traffic - Calculation" value="6" />
-    <att name="Max Traffic - Estimation Confidence" value="0.9" />
-    <att name="Max Traffic - Estimation" value="1000" />
     <att name="Number of Videos" value="100" />
-    <att name="Max User Base - Estimation Confidence" value="0.95" />
-    <att name="Expected Maintenence Staff" value="1" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
-    <att name="Max Traffic - Calculation" value="1487" />
-    <att name="Server Operating System" value="Linux" />
-    <att name="Max Concurrent Traffic - Estimation" value="3" />
-    <att name="Max User Base - Estimation" value="100000" />
-    <att name="Max User Base - Calculation" value="149569" />
-    <att name="Minimum Browser" value="Safari;" />
-    <att name="Expected Initial Budget" value="30000" />
-    <att name="Mobile Support" value="Mobile Optimized" />
     <att name="Content Change Frequency" value="500" />
+    <att name="Type of Video Required" value="Static" />
+    <att name="Expected Monthly Maintenance Budget" value="2500" />
+    <att name="Max Traffic - Calculation" value="1487" />
+    <att name="Minimum Browser" value="Safari;" />
+    <att name="Max Concurrent Traffic - Estimation" value="3" />
+    <att name="Mobile Support" value="Mobile Optimized" />
+    <att name="Max Concurrent Traffic - Calculation" value="6" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
+    <att name="Max Traffic - Estimation" value="1000" />
+    <att name="Server Operating System" value="Linux" />
+    <att name="Database" value="CouchDB" />
+    <att name="Max Traffic - Estimation Confidence" value="0.9" />
+    <att name="Max User Base - Estimation" value="100000" />
+    <att name="Programming Language" value="PHP" />
+    <att name="Max User Base - Estimation Confidence" value="0.95" />
+    <att name="Max User Base - Calculation" value="149569" />
+    <att name="Expected Initial Budget" value="30000" />
     <att name="Web Server" value="Apache" />
+    <att name="Expected Maintenence Staff" value="1" />
   </instance>
   <instance id="Requirements1" >
-    <att name="Programming Language" value="Any" />
-    <att name="Type of Video Required" value="None" />
-    <att name="Database" value="Microsoft SQL Server" />
-    <att name="Expected Monthly Maintenance Budget" value="2000" />
-    <att name="Max Concurrent Traffic - Calculation" value="15" />
-    <att name="Max Traffic - Estimation Confidence" value="0.95" />
-    <att name="Max Traffic - Estimation" value="1000" />
     <att name="Number of Videos" value="0" />
-    <att name="Max User Base - Estimation Confidence" value="0.95" />
-    <att name="Expected Maintenence Staff" value="2" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
+    <att name="Content Change Frequency" value="200" />
+    <att name="Type of Video Required" value="None" />
+    <att name="Expected Monthly Maintenance Budget" value="2000" />
     <att name="Max Traffic - Calculation" value="1461" />
-    <att name="Server Operating System" value="Windows" />
+    <att name="Minimum Browser" value="IE8;Firefox;" />
     <att name="Max Concurrent Traffic - Estimation" value="10" />
+    <att name="Mobile Support" value="Mobile Optimized" />
+    <att name="Max Concurrent Traffic - Calculation" value="15" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
+    <att name="Max Traffic - Estimation" value="1000" />
+    <att name="Server Operating System" value="Windows" />
+    <att name="Database" value="Microsoft SQL Server" />
+    <att name="Max Traffic - Estimation Confidence" value="0.95" />
     <att name="Max User Base - Estimation" value="10000" />
+    <att name="Programming Language" value="Any" />
+    <att name="Max User Base - Estimation Confidence" value="0.95" />
     <att name="Max User Base - Calculation" value="14957" />
     <att name="Expected Initial Budget" value="250000" />
-    <att name="Mobile Support" value="Mobile Optimized" />
-    <att name="Content Change Frequency" value="200" />
     <att name="Web Server" value="IIS 7.5" />
+    <att name="Expected Maintenence Staff" value="2" />
   </instance>
   <instance id="Requirements0" >
-    <att name="Programming Language" value="Any" />
-    <att name="Type of Video Required" value="None" />
-    <att name="Database" value="Any" />
-    <att name="Expected Monthly Maintenance Budget" value="0" />
-    <att name="Max Concurrent Traffic - Calculation" value="7" />
-    <att name="Max Traffic - Estimation Confidence" value="0.01" />
-    <att name="Max Traffic - Estimation" value="1" />
     <att name="Number of Videos" value="0" />
-    <att name="Max User Base - Estimation Confidence" value="0.01" />
-    <att name="Expected Maintenence Staff" value="1" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
-    <att name="Max Traffic - Calculation" value="99" />
-    <att name="Server Operating System" value="Any" />
-    <att name="Max Concurrent Traffic - Estimation" value="2" />
-    <att name="Max User Base - Estimation" value="1000" />
-    <att name="Max User Base - Calculation" value="9802" />
-    <att name="Minimum Browser" value="IE9;Chrome;Firefox;" />
-    <att name="Expected Initial Budget" value="3000" />
-    <att name="Mobile Support" value="Mobile Viewable" />
     <att name="Content Change Frequency" value="3" />
+    <att name="Type of Video Required" value="None" />
+    <att name="Expected Monthly Maintenance Budget" value="0" />
+    <att name="Max Traffic - Calculation" value="99" />
+    <att name="Minimum Browser" value="IE9;Chrome;Firefox;" />
+    <att name="Max Concurrent Traffic - Estimation" value="2" />
+    <att name="Mobile Support" value="Mobile Viewable" />
+    <att name="Max Concurrent Traffic - Calculation" value="7" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
+    <att name="Max Traffic - Estimation" value="1" />
+    <att name="Server Operating System" value="Any" />
+    <att name="Database" value="Any" />
+    <att name="Max Traffic - Estimation Confidence" value="0.01" />
+    <att name="Max User Base - Estimation" value="1000" />
+    <att name="Programming Language" value="Any" />
+    <att name="Max User Base - Estimation Confidence" value="0.01" />
+    <att name="Max User Base - Calculation" value="9802" />
+    <att name="Expected Initial Budget" value="3000" />
     <att name="Web Server" value="Any" />
+    <att name="Expected Maintenence Staff" value="1" />
   </instance>
   <instance id="Requirements3" >
-    <att name="Programming Language" value="Any" />
-    <att name="Type of Video Required" value="Streaming" />
-    <att name="Database" value="Any" />
-    <att name="Expected Monthly Maintenance Budget" value="4000" />
-    <att name="Max Concurrent Traffic - Calculation" value="112" />
-    <att name="Max Traffic - Estimation Confidence" value="0.25" />
-    <att name="Max Traffic - Estimation" value="5000" />
     <att name="Number of Videos" value="100" />
-    <att name="Max User Base - Estimation Confidence" value="0.9" />
-    <att name="Expected Maintenence Staff" value="5" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.05" />
-    <att name="Max Traffic - Calculation" value="14781" />
-    <att name="Server Operating System" value="Any" />
-    <att name="Max Concurrent Traffic - Estimation" value="100" />
-    <att name="Max User Base - Estimation" value="750000" />
-    <att name="Max User Base - Calculation" value="1239" />
-    <att name="Minimum Browser" value="Safari;Chrome;" />
-    <att name="Expected Initial Budget" value="150000" />
-    <att name="Mobile Support" value="Mobile Viewable" />
     <att name="Content Change Frequency" value="10" />
+    <att name="Type of Video Required" value="Streaming" />
+    <att name="Expected Monthly Maintenance Budget" value="4000" />
+    <att name="Max Traffic - Calculation" value="14781" />
+    <att name="Minimum Browser" value="Safari;Chrome;" />
+    <att name="Max Concurrent Traffic - Estimation" value="100" />
+    <att name="Mobile Support" value="Mobile Viewable" />
+    <att name="Max Concurrent Traffic - Calculation" value="112" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.05" />
+    <att name="Max Traffic - Estimation" value="5000" />
+    <att name="Server Operating System" value="Any" />
+    <att name="Database" value="Any" />
+    <att name="Max Traffic - Estimation Confidence" value="0.25" />
+    <att name="Max User Base - Estimation" value="750000" />
+    <att name="Programming Language" value="Any" />
+    <att name="Max User Base - Estimation Confidence" value="0.9" />
+    <att name="Max User Base - Calculation" value="1239742" />
+    <att name="Expected Initial Budget" value="150000" />
     <att name="Web Server" value="Any" />
+    <att name="Expected Maintenence Staff" value="5" />
   </instance>
   <instance id="Requirements2" >
-    <att name="Programming Language" value="Any" />
-    <att name="Type of Video Required" value="Static" />
-    <att name="Database" value="MySQL" />
-    <att name="Expected Monthly Maintenance Budget" value="3500" />
-    <att name="Max Concurrent Traffic - Calculation" value="7" />
-    <att name="Max Traffic - Estimation Confidence" value="0.1" />
-    <att name="Max Traffic - Estimation" value="5" />
     <att name="Number of Videos" value="20" />
-    <att name="Max User Base - Estimation Confidence" value="0.1" />
-    <att name="Expected Maintenence Staff" value="3" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
-    <att name="Max Traffic - Calculation" value="193" />
-    <att name="Server Operating System" value="Linux" />
-    <att name="Max Concurrent Traffic - Estimation" value="2" />
-    <att name="Max User Base - Estimation" value="20000" />
-    <att name="Max User Base - Calculation" value="163746" />
-    <att name="Minimum Browser" value="Chrome;" />
-    <att name="Expected Initial Budget" value="200000" />
-    <att name="Mobile Support" value="None" />
     <att name="Content Change Frequency" value="50" />
+    <att name="Type of Video Required" value="Static" />
+    <att name="Expected Monthly Maintenance Budget" value="3500" />
+    <att name="Max Traffic - Calculation" value="193" />
+    <att name="Minimum Browser" value="Chrome;" />
+    <att name="Max Concurrent Traffic - Estimation" value="2" />
+    <att name="Mobile Support" value="None" />
+    <att name="Max Concurrent Traffic - Calculation" value="7" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
+    <att name="Max Traffic - Estimation" value="5" />
+    <att name="Server Operating System" value="Linux" />
+    <att name="Database" value="MySQL" />
+    <att name="Max Traffic - Estimation Confidence" value="0.1" />
+    <att name="Max User Base - Estimation" value="20000" />
+    <att name="Programming Language" value="Any" />
+    <att name="Max User Base - Estimation Confidence" value="0.1" />
+    <att name="Max User Base - Calculation" value="163746" />
+    <att name="Expected Initial Budget" value="200000" />
     <att name="Web Server" value="Apache" />
+    <att name="Expected Maintenence Staff" value="3" />
   </instance>
   <instance id="Requirements5" >
-    <att name="Programming Language" value="C#" />
-    <att name="Type of Video Required" value="Streaming" />
-    <att name="Database" value="MySQL" />
-    <att name="Expected Monthly Maintenance Budget" value="7000" />
-    <att name="Max Concurrent Traffic - Calculation" value="16" />
-    <att name="Max Traffic - Estimation Confidence" value="0.99" />
-    <att name="Max Traffic - Estimation" value="250000" />
     <att name="Number of Videos" value="500" />
-    <att name="Max User Base - Estimation Confidence" value="0.99" />
-    <att name="Expected Maintenence Staff" value="2" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.99" />
-    <att name="Max Traffic - Calculation" value="360825" />
-    <att name="Server Operating System" value="Windows" />
-    <att name="Max Concurrent Traffic - Estimation" value="15" />
-    <att name="Max User Base - Estimation" value="100000" />
-    <att name="Max User Base - Calculation" value="138069" />
-    <att name="Minimum Browser" value="IE9;Firefox;" />
-    <att name="Expected Initial Budget" value="50000" />
-    <att name="Mobile Support" value="Mobile Optimized" />
     <att name="Content Change Frequency" value="150" />
+    <att name="Type of Video Required" value="Streaming" />
+    <att name="Expected Monthly Maintenance Budget" value="7000" />
+    <att name="Max Traffic - Calculation" value="360825" />
+    <att name="Minimum Browser" value="IE9;Firefox;" />
+    <att name="Max Concurrent Traffic - Estimation" value="15" />
+    <att name="Mobile Support" value="Mobile Optimized" />
+    <att name="Max Concurrent Traffic - Calculation" value="16" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.99" />
+    <att name="Max Traffic - Estimation" value="250000" />
+    <att name="Server Operating System" value="Windows" />
+    <att name="Database" value="MySQL" />
+    <att name="Max Traffic - Estimation Confidence" value="0.99" />
+    <att name="Max User Base - Estimation" value="100000" />
+    <att name="Programming Language" value="C#" />
+    <att name="Max User Base - Estimation Confidence" value="0.99" />
+    <att name="Max User Base - Calculation" value="138069" />
+    <att name="Expected Initial Budget" value="50000" />
     <att name="Web Server" value="IIS 7.5" />
+    <att name="Expected Maintenence Staff" value="2" />
   </instance>
   <instance id="Requirements4" >
-    <att name="Programming Language" value="C#" />
-    <att name="Type of Video Required" value="None" />
-    <att name="Database" value="Oracle SQL Server" />
-    <att name="Expected Monthly Maintenance Budget" value="6000" />
-    <att name="Max Concurrent Traffic - Calculation" value="15" />
-    <att name="Max Traffic - Estimation Confidence" value="0.85" />
-    <att name="Max Traffic - Estimation" value="500" />
     <att name="Number of Videos" value="0" />
-    <att name="Max User Base - Estimation Confidence" value="0.85" />
-    <att name="Expected Maintenence Staff" value="10" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
-    <att name="Max Traffic - Calculation" value="759" />
-    <att name="Server Operating System" value="Windows" />
-    <att name="Max Concurrent Traffic - Estimation" value="10" />
-    <att name="Max User Base - Estimation" value="500000" />
-    <att name="Max User Base - Calculation" value="913418" />
-    <att name="Minimum Browser" value="IE9;Chrome;Firefox;Safari;" />
-    <att name="Expected Initial Budget" value="500000" />
-    <att name="Mobile Support" value="Mobile Viewable" />
     <att name="Content Change Frequency" value="5" />
+    <att name="Type of Video Required" value="None" />
+    <att name="Expected Monthly Maintenance Budget" value="6000" />
+    <att name="Max Traffic - Calculation" value="759" />
+    <att name="Minimum Browser" value="IE9;Chrome;Firefox;Safari;" />
+    <att name="Max Concurrent Traffic - Estimation" value="10" />
+    <att name="Mobile Support" value="Mobile Viewable" />
+    <att name="Max Concurrent Traffic - Calculation" value="15" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.5" />
+    <att name="Max Traffic - Estimation" value="500" />
+    <att name="Server Operating System" value="Windows" />
+    <att name="Database" value="Oracle SQL Server" />
+    <att name="Max Traffic - Estimation Confidence" value="0.85" />
+    <att name="Max User Base - Estimation" value="500000" />
+    <att name="Programming Language" value="C#" />
+    <att name="Max User Base - Estimation Confidence" value="0.85" />
+    <att name="Max User Base - Calculation" value="913418" />
+    <att name="Expected Initial Budget" value="500000" />
     <att name="Web Server" value="IIS 7" />
+    <att name="Expected Maintenence Staff" value="10" />
   </instance>
   <instance id="Requirements7" >
-    <att name="Programming Language" value="Java" />
-    <att name="Type of Video Required" value="Streaming" />
-    <att name="Database" value="Any" />
-    <att name="Expected Monthly Maintenance Budget" value="4500" />
-    <att name="Max Concurrent Traffic - Calculation" value="6" />
-    <att name="Max Traffic - Estimation Confidence" value="0.5" />
-    <att name="Max Traffic - Estimation" value="2500" />
     <att name="Number of Videos" value="10" />
-    <att name="Max User Base - Estimation Confidence" value="0.5" />
-    <att name="Expected Maintenence Staff" value="1" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.25" />
-    <att name="Max Traffic - Calculation" value="4978" />
-    <att name="Server Operating System" value="Linux" />
-    <att name="Max Concurrent Traffic - Estimation" value="2" />
-    <att name="Max User Base - Estimation" value="75000" />
-    <att name="Max User Base - Calculation" value="275910" />
-    <att name="Minimum Browser" value="Chrome;Firefox;" />
-    <att name="Expected Initial Budget" value="200000" />
-    <att name="Mobile Support" value="Mobile Viewable" />
     <att name="Content Change Frequency" value="200" />
+    <att name="Type of Video Required" value="Streaming" />
+    <att name="Expected Monthly Maintenance Budget" value="4500" />
+    <att name="Max Traffic - Calculation" value="4978" />
+    <att name="Minimum Browser" value="Chrome;Firefox;" />
+    <att name="Max Concurrent Traffic - Estimation" value="2" />
+    <att name="Mobile Support" value="Mobile Viewable" />
+    <att name="Max Concurrent Traffic - Calculation" value="6" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.25" />
+    <att name="Max Traffic - Estimation" value="2500" />
+    <att name="Server Operating System" value="Linux" />
+    <att name="Database" value="Any" />
+    <att name="Max Traffic - Estimation Confidence" value="0.5" />
+    <att name="Max User Base - Estimation" value="75000" />
+    <att name="Programming Language" value="Java" />
+    <att name="Max User Base - Estimation Confidence" value="0.5" />
+    <att name="Max User Base - Calculation" value="275910" />
+    <att name="Expected Initial Budget" value="200000" />
     <att name="Web Server" value="Tomcat" />
+    <att name="Expected Maintenence Staff" value="1" />
   </instance>
   <instance id="Requirements6" >
-    <att name="Programming Language" value="Java" />
-    <att name="Type of Video Required" value="None" />
-    <att name="Database" value="Any" />
-    <att name="Expected Monthly Maintenance Budget" value="3000" />
-    <att name="Max Concurrent Traffic - Calculation" value="12" />
-    <att name="Max Traffic - Estimation Confidence" value="0.01" />
-    <att name="Max Traffic - Estimation" value="100" />
     <att name="Number of Videos" value="0" />
-    <att name="Max User Base - Estimation Confidence" value="0.01" />
-    <att name="Expected Maintenence Staff" value="2" />
-    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
-    <att name="Max Traffic - Calculation" value="519" />
-    <att name="Server Operating System" value="Any" />
-    <att name="Max Concurrent Traffic - Estimation" value="5" />
-    <att name="Max User Base - Estimation" value="100000" />
-    <att name="Max User Base - Calculation" value="980199" />
-    <att name="Minimum Browser" value="Chrome;" />
-    <att name="Expected Initial Budget" value="75000" />
-    <att name="Mobile Support" value="None" />
     <att name="Content Change Frequency" value="50" />
+    <att name="Type of Video Required" value="None" />
+    <att name="Expected Monthly Maintenance Budget" value="3000" />
+    <att name="Max Traffic - Calculation" value="519" />
+    <att name="Minimum Browser" value="Chrome;" />
+    <att name="Max Concurrent Traffic - Estimation" value="5" />
+    <att name="Mobile Support" value="None" />
+    <att name="Max Concurrent Traffic - Calculation" value="12" />
+    <att name="Max Concurrent Traffic - Estimation Confidence" value="0.01" />
+    <att name="Max Traffic - Estimation" value="100" />
+    <att name="Server Operating System" value="Any" />
+    <att name="Database" value="Any" />
+    <att name="Max Traffic - Estimation Confidence" value="0.01" />
+    <att name="Max User Base - Estimation" value="100000" />
+    <att name="Programming Language" value="Java" />
+    <att name="Max User Base - Estimation Confidence" value="0.01" />
+    <att name="Max User Base - Calculation" value="980199" />
+    <att name="Expected Initial Budget" value="75000" />
     <att name="Web Server" value="Any" />
+    <att name="Expected Maintenence Staff" value="2" />
   </instance>
 </instances>
 <cb name="Default Case Base">
      <case name="Requirements9" />
      <case name="Requirements8" />
-     <case name="Configuration7" />
      <case name="Requirements1" />
-     <case name="Configuration6" />
+     <case name="Configuration7" />
      <case name="Requirements0" />
-     <case name="Configuration9" />
+     <case name="Configuration6" />
      <case name="Requirements3" />
-     <case name="Configuration8" />
+     <case name="Configuration9" />
      <case name="Requirements2" />
+     <case name="Configuration8" />
      <case name="Requirements5" />
      <case name="Requirements4" />
      <case name="Requirements7" />
@@ -396,18 +397,6 @@
      <case name="Configuration5" />
      <case name="Configuration2" />
      <case name="Configuration3" />
-     <case name="Website4" />
-     <case name="Website3" />
-     <case name="Website6" />
-     <case name="Website5" />
-     <case name="Website8" />
-     <case name="Website7" />
-     <case name="Website9" />
-     <case name="Website0" />
-     <case name="Website2" />
-     <case name="Website1" />
-</cb>
-<cb name="Query Case Base">
      <case name="Website4" />
      <case name="Website3" />
      <case name="Website6" />
