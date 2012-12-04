@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="INFO 612 - CBR Prototype" author="Joe Raczkowski, Alex Lapinski, Surya Medepalli" >
+<svs>
+  <sv name="_others_"/>
+  <sv name="_unknown_"/>
+  <sv name="_undefined_"/>
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_others_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+</fct>
+</svs>
+<model>
+  <concept name="Website">
+    <desc name="Problem" type="Concept" concept="Requirements" mult="false" >
+      <mc fct="AnyDatabase_AnyLanguage" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="AnyDatabase" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="SpecificDatabase" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Solution" type="Concept" concept="Configuration" mult="false" >
+      <mc fct="default function" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <amalgam name="default function" type="WEIGHTED_SUM" active="true" >
+      <entry name="Problem" active="true" fct="default function" weight="1.0"/>
+      <entry name="Solution" active="false" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+  <concept name="Configuration">
+    <desc name="Server Operating System" type="Symbol" mult="false" >
+      <symbol value="Windows" />
+      <symbol value="Linux" />
+      <symbol value="OS X" />
+      <symbol value="BSD" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Windows">
+</qsym>
+<qsym name="Linux">
+</qsym>
+<qsym name="OS X">
+</qsym>
+<qsym name="BSD">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Content Management System" type="Symbol" mult="false" >
+      <symbol value="OpenCMS" />
+      <symbol value="Liferay" />
+      <symbol value="CakePHP" />
+      <symbol value="Drupal" />
+      <symbol value="Sitecore" />
+      <symbol value="None" />
+      <symbol value="Django" />
+      <symbol value="Ektron" />
+      <symbol value="Ruby on Rails" />
+      <symbol value="Plone" />
+      <symbol value="Movable Type" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="OpenCMS">
+</qsym>
+<qsym name="Liferay">
+</qsym>
+<qsym name="CakePHP">
+</qsym>
+<qsym name="Drupal">
+</qsym>
+<qsym name="Sitecore">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="Django">
+</qsym>
+<qsym name="Ektron">
+</qsym>
+<qsym name="Ruby on Rails">
+</qsym>
+<qsym name="Plone">
+</qsym>
+<qsym name="Movable Type">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Database" type="Symbol" mult="false" >
+      <symbol value="PostgreSQL" />
+      <symbol value="MySQL" />
+      <symbol value="IBM SQL Server" />
+      <symbol value="Oracle SQL Server" />
+      <symbol value="VelocityDB" />
+      <symbol value="MongoDB" />
+      <symbol value="Microsoft SQL Server" />
+      <symbol value="Cache" />
+      <symbol value="None" />
+      <symbol value="SQLite" />
+      <symbol value="CouchDB" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="PostgreSQL">
+</qsym>
+<qsym name="MySQL">
+</qsym>
+<qsym name="IBM SQL Server">
+</qsym>
+<qsym name="Oracle SQL Server">
+</qsym>
+<qsym name="VelocityDB">
+</qsym>
+<qsym name="MongoDB">
+</qsym>
+<qsym name="Microsoft SQL Server">
+</qsym>
+<qsym name="Cache">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="SQLite">
+</qsym>
+<qsym name="CouchDB">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Web Server" type="Symbol" mult="false" >
+      <symbol value="nginx" />
+      <symbol value="Apache" />
+      <symbol value="node" />
+      <symbol value="lighthttp" />
+      <symbol value="IIS 6" />
+      <symbol value="Tomcat" />
+      <symbol value="IIS 7" />
+      <symbol value="IIS 7.5" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="nginx">
+</qsym>
+<qsym name="Apache">
+</qsym>
+<qsym name="node">
+</qsym>
+<qsym name="lighthttp">
+</qsym>
+<qsym name="IIS 6">
+</qsym>
+<qsym name="Tomcat">
+</qsym>
+<qsym name="IIS 7">
+</qsym>
+<qsym name="IIS 7.5">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Client-Side Framework" type="Symbol" mult="true" >
+      <symbol value="Prototype" />
+      <symbol value="Dojo" />
+      <symbol value="Bootstrap" />
+      <symbol value="RequireJS" />
+      <symbol value="VideoJS" />
+      <symbol value="JQuery" />
+      <symbol value="JQuery Mobile" />
+      <symbol value="RaphaelJS" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Prototype">
+</qsym>
+<qsym name="Dojo">
+</qsym>
+<qsym name="Bootstrap">
+</qsym>
+<qsym name="RequireJS">
+</qsym>
+<qsym name="VideoJS">
+</qsym>
+<qsym name="JQuery">
+</qsym>
+<qsym name="JQuery Mobile">
+</qsym>
+<qsym name="RaphaelJS">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Video Service" type="Symbol" mult="false" >
+      <symbol value="Zencoder" />
+      <symbol value="None" />
+      <symbol value="Brightcove" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Zencoder">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="Brightcove">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Programming Language" type="Symbol" mult="false" >
+      <symbol value="Javascript" />
+      <symbol value="Visual Basic" />
+      <symbol value="C#" />
+      <symbol value="PHP" />
+      <symbol value="Ruby" />
+      <symbol value="Perl" />
+      <symbol value="Python" />
+      <symbol value="Java" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Javascript">
+</qsym>
+<qsym name="Visual Basic">
+</qsym>
+<qsym name="C#">
+</qsym>
+<qsym name="PHP">
+</qsym>
+<qsym name="Ruby">
+</qsym>
+<qsym name="Perl">
+</qsym>
+<qsym name="Python">
+</qsym>
+<qsym name="Java">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Server-Side Framework" type="Symbol" mult="false" >
+      <symbol value="CherryPy" />
+      <symbol value="node.js" />
+      <symbol value="Flask" />
+      <symbol value="CakePHP" />
+      <symbol value="Drupal" />
+      <symbol value="ASP.NET MVC" />
+      <symbol value="Apache Struts" />
+      <symbol value="None" />
+      <symbol value="Django" />
+      <symbol value="Java Server Faces" />
+      <symbol value="ASP.NET Web Forms" />
+      <symbol value="Ruby on Rails" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="CherryPy">
+</qsym>
+<qsym name="node.js">
+</qsym>
+<qsym name="Flask">
+</qsym>
+<qsym name="CakePHP">
+</qsym>
+<qsym name="Drupal">
+</qsym>
+<qsym name="ASP.NET MVC">
+</qsym>
+<qsym name="Apache Struts">
+</qsym>
+<qsym name="None">
+</qsym>
+<qsym name="Django">
+</qsym>
+<qsym name="Java Server Faces">
+</qsym>
+<qsym name="ASP.NET Web Forms">
+</qsym>
+<qsym name="Ruby on Rails">
+</qsym>
+</fct>
+    </desc>
+    <amalgam name="default function" type="EUCLIDEAN" active="true" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1.0"/>
+      <entry name="Content Management System" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="1.0"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Client-Side Framework" active="true" fct="default function" weight="1.0"/>
+      <entry name="Video Service" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1.0"/>
+      <entry name="Server-Side Framework" active="true" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+  <concept name="Requirements">
+    <desc name="Server Operating System" type="Symbol" mult="false" >
+      <symbol value="Linux" />
+      <symbol value="Windows" />
+      <symbol value="Any" />
+      <symbol value="OS X" />
+      <symbol value="BSD" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Linux">
+<csym name="Any" sim="0.5"/>
+<csym name="OS X" sim="0.66"/>
+<csym name="BSD" sim="0.66"/>
+</qsym>
+<qsym name="Windows">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="Linux" sim="0.5"/>
+<csym name="Windows" sim="0.5"/>
+<csym name="OS X" sim="0.5"/>
+<csym name="BSD" sim="0.5"/>
+</qsym>
+<qsym name="OS X">
+<csym name="Linux" sim="0.66"/>
+<csym name="Any" sim="0.5"/>
+<csym name="BSD" sim="0.66"/>
+</qsym>
+<qsym name="BSD">
+<csym name="Linux" sim="0.66"/>
+<csym name="Any" sim="0.5"/>
+<csym name="OS X" sim="0.66"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Max Concurrent Traffic - Estimation" type="Integer" min="1" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Content Change Frequency" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="POLYNOMIAL_WITH" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Maintenence Staff" type="Integer" min="0" max="30" mult="false" >
+      <fct name="default function" type="Integer" ltype="POLYNOMIAL_WITH" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Database" type="Symbol" mult="false" >
+      <symbol value="PostgreSQL" />
+      <symbol value="MySQL" />
+      <symbol value="Any" />
+      <symbol value="Cach&#233;" />
+      <symbol value="Oracle SQL Server" />
+      <symbol value="IBM SQL Server" />
+      <symbol value="VelocityDB" />
+      <symbol value="MongoDB" />
+      <symbol value="Microsoft SQL Server" />
+      <symbol value="SQLite" />
+      <symbol value="CouchDB" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="PostgreSQL">
+<csym name="MySQL" sim="0.5"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.25"/>
+<csym name="IBM SQL Server" sim="0.25"/>
+<csym name="VelocityDB" sim="0.25"/>
+<csym name="Microsoft SQL Server" sim="0.6"/>
+<csym name="SQLite" sim="0.25"/>
+</qsym>
+<qsym name="MySQL">
+<csym name="PostgreSQL" sim="0.5"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.6"/>
+<csym name="IBM SQL Server" sim="0.6"/>
+<csym name="Microsoft SQL Server" sim="0.25"/>
+<csym name="SQLite" sim="0.25"/>
+</qsym>
+<qsym name="Any">
+<csym name="PostgreSQL" sim="0.5"/>
+<csym name="MySQL" sim="0.5"/>
+<csym name="Caché" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.5"/>
+<csym name="IBM SQL Server" sim="0.5"/>
+<csym name="VelocityDB" sim="0.5"/>
+<csym name="MongoDB" sim="0.5"/>
+<csym name="Microsoft SQL Server" sim="0.5"/>
+<csym name="SQLite" sim="0.5"/>
+<csym name="CouchDB" sim="0.5"/>
+</qsym>
+<qsym name="Caché">
+<csym name="Any" sim="0.5"/>
+<csym name="VelocityDB" sim="0.25"/>
+<csym name="MongoDB" sim="0.25"/>
+<csym name="CouchDB" sim="0.25"/>
+</qsym>
+<qsym name="Oracle SQL Server">
+<csym name="PostgreSQL" sim="0.25"/>
+<csym name="MySQL" sim="0.6"/>
+<csym name="Any" sim="0.5"/>
+<csym name="IBM SQL Server" sim="0.75"/>
+<csym name="Microsoft SQL Server" sim="0.75"/>
+<csym name="SQLite" sim="0.25"/>
+</qsym>
+<qsym name="IBM SQL Server">
+<csym name="PostgreSQL" sim="0.25"/>
+<csym name="MySQL" sim="0.6"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.75"/>
+</qsym>
+<qsym name="VelocityDB">
+<csym name="PostgreSQL" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Caché" sim="0.25"/>
+<csym name="MongoDB" sim="0.25"/>
+<csym name="CouchDB" sim="0.25"/>
+</qsym>
+<qsym name="MongoDB">
+<csym name="Any" sim="0.5"/>
+<csym name="Caché" sim="0.25"/>
+<csym name="VelocityDB" sim="0.25"/>
+<csym name="CouchDB" sim="0.5"/>
+</qsym>
+<qsym name="Microsoft SQL Server">
+<csym name="PostgreSQL" sim="0.6"/>
+<csym name="MySQL" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.75"/>
+</qsym>
+<qsym name="SQLite">
+<csym name="PostgreSQL" sim="0.25"/>
+<csym name="MySQL" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+<csym name="Oracle SQL Server" sim="0.25"/>
+</qsym>
+<qsym name="CouchDB">
+<csym name="Any" sim="0.5"/>
+<csym name="Caché" sim="0.25"/>
+<csym name="VelocityDB" sim="0.25"/>
+<csym name="MongoDB" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Web Server" type="Symbol" mult="false" >
+      <symbol value="nginx" />
+      <symbol value="Apache" />
+      <symbol value="node" />
+      <symbol value="Any" />
+      <symbol value="lighthttp" />
+      <symbol value="IIS 6" />
+      <symbol value="Tomcat" />
+      <symbol value="IIS 7" />
+      <symbol value="IIS 7.5" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="false">
+<qsym name="nginx">
+<csym name="Apache" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Apache">
+<csym name="nginx" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="node">
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="Any">
+<csym name="nginx" sim="0.5"/>
+<csym name="Apache" sim="0.5"/>
+<csym name="node" sim="0.5"/>
+<csym name="lighthttp" sim="0.5"/>
+<csym name="IIS 6" sim="0.5"/>
+<csym name="Tomcat" sim="0.5"/>
+<csym name="IIS 7" sim="0.5"/>
+<csym name="IIS 7.5" sim="0.5"/>
+</qsym>
+<qsym name="lighthttp">
+<csym name="nginx" sim="0.25"/>
+<csym name="Apache" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IIS 6">
+<csym name="Any" sim="0.5"/>
+<csym name="IIS 7" sim="0.8"/>
+<csym name="IIS 7.5" sim="0.8"/>
+</qsym>
+<qsym name="Tomcat">
+<csym name="Apache" sim="0.25"/>
+<csym name="Any" sim="0.5"/>
+</qsym>
+<qsym name="IIS 7">
+<csym name="Any" sim="0.5"/>
+<csym name="IIS 7.5" sim="0.8"/>
+</qsym>
+<qsym name="IIS 7.5">
+<csym name="Any" sim="0.5"/>
+<csym name="IIS 7" sim="0.8"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Programming Language" type="Symbol" mult="false" >
+      <symbol value="Javascript" />
+      <symbol value="Any" />
+      <symbol value="Visual Basic" />
+      <symbol value="C#" />
+      <symbol value="PHP" />
+      <symbol value="Ruby" />
+      <symbol value="Python" />
+      <symbol value="Perl" />
+      <symbol value="Java" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Javascript">
+<csym name="Any" sim="0.25"/>
+</qsym>
+<qsym name="Any">
+<csym name="Javascript" sim="0.25"/>
+<csym name="Visual Basic" sim="0.5"/>
+<csym name="C#" sim="0.5"/>
+<csym name="PHP" sim="0.5"/>
+<csym name="Ruby" sim="0.5"/>
+<csym name="Python" sim="0.5"/>
+<csym name="Perl" sim="0.5"/>
+<csym name="Java" sim="0.5"/>
+</qsym>
+<qsym name="Visual Basic">
+<csym name="Any" sim="0.5"/>
+<csym name="C#" sim="0.95"/>
+</qsym>
+<qsym name="C#">
+<csym name="Any" sim="0.5"/>
+<csym name="Visual Basic" sim="0.95"/>
+</qsym>
+<qsym name="PHP">
+<csym name="Any" sim="0.5"/>
+<csym name="Ruby" sim="0.33"/>
+<csym name="Python" sim="0.33"/>
+<csym name="Perl" sim="0.33"/>
+</qsym>
+<qsym name="Ruby">
+<csym name="Any" sim="0.5"/>
+<csym name="PHP" sim="0.33"/>
+<csym name="Python" sim="0.33"/>
+<csym name="Perl" sim="0.33"/>
+</qsym>
+<qsym name="Python">
+<csym name="Any" sim="0.5"/>
+<csym name="PHP" sim="0.33"/>
+<csym name="Ruby" sim="0.33"/>
+<csym name="Perl" sim="0.33"/>
+</qsym>
+<qsym name="Perl">
+<csym name="Any" sim="0.5"/>
+<csym name="PHP" sim="0.33"/>
+<csym name="Ruby" sim="0.33"/>
+<csym name="Python" sim="0.33"/>
+</qsym>
+<qsym name="Java">
+<csym name="Any" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Max Traffic - Calculation" type="Integer" min="0" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="0.0" rtype="CONSTANT" rparam="0.75" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Monthly Maintenance Budget" type="Integer" min="0" max="10000" mult="false" >
+      <fct name="Expected Monthly Maintenece Budget" type="AdvancedInteger" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX">
+        <point x="-10000.0" y="0.0" />
+        <point x="-5000.0" y="0.5" />
+        <point x="-2500.0" y="0.95" />
+        <point x="-1000.0" y="0.95" />
+        <point x="0.0" y="1.0" />
+        <point x="5000.0" y="0.5" />
+        <point x="10000.0" y="0.0" />
+      </fct>
+      <fct name="default function" type="Integer" ltype="SMOOTH_STEP_AT" lparam="-5000.0" rtype="CONSTANT" rparam="0.0" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Max Concurrent Traffic - Calculation" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="default function" type="Integer" ltype="POLYNOMIAL_WITH" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Max Traffic - Estimation Confidence" type="Float" min="0.01" max="1.0" mult="false" >
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="Number of Videos" type="Integer" min="0" max="1000" mult="false" >
+      <fct name="Number Of Videos" type="AdvancedInteger" mode="DIFFERENCE" symm="true" mt="WORST_MATCH" r="NONE" t="NONE">
+        <point x="-1000.0" y="0.0" />
+        <point x="-100.0" y="0.25" />
+        <point x="-10.0" y="0.95" />
+        <point x="0.0" y="1.0" />
+        <point x="10.0" y="0.95" />
+        <point x="100.0" y="0.25" />
+        <point x="1000.0" y="0.0" />
+      </fct>
+      <fct name="default function" type="Integer" ltype="POLYNOMIAL_WITH" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Max User Base - Estimation Confidence" type="Float" min="0.01" max="1.0" mult="false" >
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="Max Traffic - Estimation" type="Integer" min="0" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Minimum Browser" type="Symbol" mult="true" >
+      <symbol value="IE8" />
+      <symbol value="IE9" />
+      <symbol value="Firefox" />
+      <symbol value="IE6" />
+      <symbol value="IE7" />
+      <symbol value="Safari" />
+      <symbol value="Chrome" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="ZERO_SIM" t="AVG" symm="true">
+<qsym name="IE8">
+<csym name="IE9" sim="0.5"/>
+<csym name="IE6" sim="0.25"/>
+<csym name="IE7" sim="0.25"/>
+</qsym>
+<qsym name="IE9">
+<csym name="IE8" sim="0.5"/>
+<csym name="Firefox" sim="0.25"/>
+<csym name="IE6" sim="0.25"/>
+<csym name="IE7" sim="0.33"/>
+<csym name="Safari" sim="0.25"/>
+<csym name="Chrome" sim="0.25"/>
+</qsym>
+<qsym name="Firefox">
+<csym name="IE9" sim="0.25"/>
+<csym name="Safari" sim="0.5"/>
+<csym name="Chrome" sim="0.5"/>
+</qsym>
+<qsym name="IE6">
+<csym name="IE8" sim="0.25"/>
+<csym name="IE9" sim="0.25"/>
+<csym name="IE7" sim="0.5"/>
+</qsym>
+<qsym name="IE7">
+<csym name="IE8" sim="0.25"/>
+<csym name="IE9" sim="0.33"/>
+<csym name="IE6" sim="0.5"/>
+</qsym>
+<qsym name="Safari">
+<csym name="IE9" sim="0.25"/>
+<csym name="Firefox" sim="0.5"/>
+<csym name="Chrome" sim="0.75"/>
+</qsym>
+<qsym name="Chrome">
+<csym name="IE9" sim="0.25"/>
+<csym name="Firefox" sim="0.5"/>
+<csym name="Safari" sim="0.75"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Max User Base - Calculation" type="Integer" min="0" max="1500000" mult="false" >
+      <fct name="Max User Base - Calculation" type="AdvancedInteger" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX">
+        <point x="-1500000.0" y="0.0" />
+        <point x="-1000.0" y="0.0" />
+        <point x="0.0" y="1.0" />
+        <point x="5000.0" y="0.75" />
+        <point x="100000.0" y="0.5" />
+        <point x="1500000.0" y="0.25" />
+      </fct>
+      <fct name="default function" type="Integer" ltype="STEP_AT" lparam="-100.0" rtype="STEP_AT" rparam="5000.0" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Expected Initial Budget" type="Integer" min="1000" max="1000000" mult="false" >
+      <fct name="Expected Initial Budget" type="AdvancedInteger" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX">
+        <point x="-999000.0" y="0.0" />
+        <point x="0.0" y="1.0" />
+        <point x="999000.0" y="0.0" />
+      </fct>
+      <fct name="default function" type="Integer" ltype="POLYNOMIAL_WITH" lparam="100.0" rtype="STEP_AT" rparam="499500.0" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Max User Base - Estimation" type="Integer" min="1" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="Type of Video Required" type="Symbol" mult="false" >
+      <symbol value="Streaming" />
+      <symbol value="Static" />
+      <symbol value="None" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Streaming">
+</qsym>
+<qsym name="Static">
+</qsym>
+<qsym name="None">
+</qsym>
+</fct>
+    </desc>
+    <desc name="Mobile Support" type="Symbol" mult="false" >
+      <symbol value="Mobile Optimized" />
+      <symbol value="Mobile Viewable" />
+      <symbol value="None" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="false">
+<qsym name="Mobile Optimized">
+<csym name="Mobile Viewable" sim="0.5"/>
+</qsym>
+<qsym name="Mobile Viewable">
+</qsym>
+<qsym name="None">
+<csym name="Mobile Viewable" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="Max Concurrent Traffic - Estimation Confidence" type="Float" min="0.01" max="1.0" mult="false" >
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <amalgam name="AnyDatabase_AnyLanguage" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="0.5"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="0.5"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
+      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
+      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
+      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+    </amalgam>
+    <amalgam name="AnyDatabase" type="WEIGHTED_SUM" active="true" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="0.5"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="5.0"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
+      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
+      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
+      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+    </amalgam>
+    <amalgam name="SpecificDatabase" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
+      <entry name="Database" active="true" fct="default function" weight="10.0"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="5.0"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
+      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
+      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
+      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+    </amalgam>
+  </concept>
+</model>
+<hierarchy>
+  <fct name="default function" type="Taxonomy" mt="PARTNER_QUERY" r="REUSE" t="MAX" qconfig="INNER_NODES_ANY" cconfig="INNER_NODES_ANY" top="inheritanceDesc" sim="0.0" symm="true" >
+    <node name="Configuration" sim="1.0" parent="inheritanceDesc" />
+    <node name="Website" sim="1.0" parent="inheritanceDesc" />
+    <node name="Requirements" sim="1.0" parent="inheritanceDesc" />
+  </fct>
+</hierarchy>
+<cases no="30" cb="Default Case Base"/>
+<cases no="10" cb="Query Case Base"/>
+</Project>
