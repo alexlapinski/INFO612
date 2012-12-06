@@ -17,9 +17,11 @@
   <concept name="Website">
     <desc name="Problem" type="Concept" concept="Requirements" mult="false" >
       <mc fct="Default" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
-      <mc fct="AnyDatabase_AnyLanguage" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
-      <mc fct="AnyDatabase" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
-      <mc fct="SpecificDatabase" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="AnyDB_AnyLang_AnyOS_AnyServer" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="AnyDB_SpecificLang_AnyOS_AnyServer" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="SpecificDB_AnyLang_SpecificOS_SpecificServer" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="AnyDB_SpecificLang_SpecificOS_SpecificServer" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <mc fct="SpecificDB_SpecificLang_SpecificOS_SpecificServer" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
     </desc>
     <desc name="Solution" type="Concept" concept="Configuration" mult="false" >
       <mc fct="default function" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
@@ -31,14 +33,14 @@
   </concept>
   <concept name="Configuration">
     <desc name="Server Operating System" type="Symbol" mult="false" >
-      <symbol value="Linux" />
       <symbol value="Windows" />
+      <symbol value="Linux" />
       <symbol value="OS X" />
       <symbol value="BSD" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
-<qsym name="Linux">
-</qsym>
 <qsym name="Windows">
+</qsym>
+<qsym name="Linux">
 </qsym>
 <qsym name="OS X">
 </qsym>
@@ -86,12 +88,12 @@
     <desc name="Database" type="Symbol" mult="false" >
       <symbol value="PostgreSQL" />
       <symbol value="MySQL" />
-      <symbol value="Oracle SQL Server" />
       <symbol value="IBM SQL Server" />
+      <symbol value="Oracle SQL Server" />
       <symbol value="VelocityDB" />
       <symbol value="MongoDB" />
-      <symbol value="Cache" />
       <symbol value="Microsoft SQL Server" />
+      <symbol value="Cache" />
       <symbol value="None" />
       <symbol value="SQLite" />
       <symbol value="CouchDB" />
@@ -100,17 +102,17 @@
 </qsym>
 <qsym name="MySQL">
 </qsym>
-<qsym name="Oracle SQL Server">
-</qsym>
 <qsym name="IBM SQL Server">
+</qsym>
+<qsym name="Oracle SQL Server">
 </qsym>
 <qsym name="VelocityDB">
 </qsym>
 <qsym name="MongoDB">
 </qsym>
-<qsym name="Cache">
-</qsym>
 <qsym name="Microsoft SQL Server">
+</qsym>
+<qsym name="Cache">
 </qsym>
 <qsym name="None">
 </qsym>
@@ -178,14 +180,14 @@
     </desc>
     <desc name="Video Service" type="Symbol" mult="false" >
       <symbol value="Zencoder" />
-      <symbol value="Brightcove" />
       <symbol value="None" />
+      <symbol value="Brightcove" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
 <qsym name="Zencoder">
 </qsym>
-<qsym name="Brightcove">
-</qsym>
 <qsym name="None">
+</qsym>
+<qsym name="Brightcove">
 </qsym>
 </fct>
     </desc>
@@ -220,38 +222,38 @@
     <desc name="Server-Side Framework" type="Symbol" mult="false" >
       <symbol value="CherryPy" />
       <symbol value="node.js" />
-      <symbol value="CakePHP" />
       <symbol value="Flask" />
+      <symbol value="CakePHP" />
       <symbol value="Drupal" />
+      <symbol value="Apache Struts" />
       <symbol value="None" />
       <symbol value="ASP.NET MVC" />
-      <symbol value="Apache Struts" />
       <symbol value="Django" />
-      <symbol value="ASP.NET Web Forms" />
       <symbol value="Java Server Faces" />
+      <symbol value="ASP.NET Web Forms" />
       <symbol value="Ruby on Rails" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
 <qsym name="CherryPy">
 </qsym>
 <qsym name="node.js">
 </qsym>
-<qsym name="CakePHP">
-</qsym>
 <qsym name="Flask">
 </qsym>
+<qsym name="CakePHP">
+</qsym>
 <qsym name="Drupal">
+</qsym>
+<qsym name="Apache Struts">
 </qsym>
 <qsym name="None">
 </qsym>
 <qsym name="ASP.NET MVC">
 </qsym>
-<qsym name="Apache Struts">
-</qsym>
 <qsym name="Django">
 </qsym>
-<qsym name="ASP.NET Web Forms">
-</qsym>
 <qsym name="Java Server Faces">
+</qsym>
+<qsym name="ASP.NET Web Forms">
 </qsym>
 <qsym name="Ruby on Rails">
 </qsym>
@@ -270,23 +272,23 @@
   </concept>
   <concept name="Requirements">
     <desc name="Server Operating System" type="Symbol" mult="false" >
-      <symbol value="Windows" />
       <symbol value="Linux" />
+      <symbol value="Windows" />
       <symbol value="Any" />
       <symbol value="OS X" />
       <symbol value="BSD" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
-<qsym name="Windows">
-<csym name="Any" sim="0.5"/>
-</qsym>
 <qsym name="Linux">
 <csym name="Any" sim="0.5"/>
 <csym name="OS X" sim="0.66"/>
 <csym name="BSD" sim="0.66"/>
 </qsym>
+<qsym name="Windows">
+<csym name="Any" sim="0.5"/>
+</qsym>
 <qsym name="Any">
-<csym name="Windows" sim="0.5"/>
 <csym name="Linux" sim="0.5"/>
+<csym name="Windows" sim="0.5"/>
 <csym name="OS X" sim="0.5"/>
 <csym name="BSD" sim="0.5"/>
 </qsym>
@@ -409,8 +411,8 @@
     <desc name="Web Server" type="Symbol" mult="false" >
       <symbol value="nginx" />
       <symbol value="Apache" />
-      <symbol value="Any" />
       <symbol value="node" />
+      <symbol value="Any" />
       <symbol value="lighthttp" />
       <symbol value="IIS 6" />
       <symbol value="Tomcat" />
@@ -425,6 +427,9 @@
 <csym name="nginx" sim="0.25"/>
 <csym name="Any" sim="0.5"/>
 </qsym>
+<qsym name="node">
+<csym name="Any" sim="0.5"/>
+</qsym>
 <qsym name="Any">
 <csym name="nginx" sim="0.5"/>
 <csym name="Apache" sim="0.5"/>
@@ -434,9 +439,6 @@
 <csym name="Tomcat" sim="0.5"/>
 <csym name="IIS 7" sim="0.5"/>
 <csym name="IIS 7.5" sim="0.5"/>
-</qsym>
-<qsym name="node">
-<csym name="Any" sim="0.5"/>
 </qsym>
 <qsym name="lighthttp">
 <csym name="nginx" sim="0.25"/>
@@ -469,8 +471,8 @@
       <symbol value="C#" />
       <symbol value="PHP" />
       <symbol value="Ruby" />
-      <symbol value="Perl" />
       <symbol value="Python" />
+      <symbol value="Perl" />
       <symbol value="Java" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
 <qsym name="Javascript">
@@ -482,8 +484,8 @@
 <csym name="C#" sim="0.5"/>
 <csym name="PHP" sim="0.5"/>
 <csym name="Ruby" sim="0.5"/>
-<csym name="Perl" sim="0.5"/>
 <csym name="Python" sim="0.5"/>
+<csym name="Perl" sim="0.5"/>
 <csym name="Java" sim="0.5"/>
 </qsym>
 <qsym name="Visual Basic">
@@ -497,26 +499,26 @@
 <qsym name="PHP">
 <csym name="Any" sim="0.5"/>
 <csym name="Ruby" sim="0.33"/>
-<csym name="Perl" sim="0.33"/>
 <csym name="Python" sim="0.33"/>
+<csym name="Perl" sim="0.33"/>
 </qsym>
 <qsym name="Ruby">
 <csym name="Any" sim="0.5"/>
 <csym name="PHP" sim="0.33"/>
+<csym name="Python" sim="0.33"/>
 <csym name="Perl" sim="0.33"/>
-<csym name="Python" sim="0.33"/>
-</qsym>
-<qsym name="Perl">
-<csym name="Any" sim="0.5"/>
-<csym name="PHP" sim="0.33"/>
-<csym name="Ruby" sim="0.33"/>
-<csym name="Python" sim="0.33"/>
 </qsym>
 <qsym name="Python">
 <csym name="Any" sim="0.5"/>
 <csym name="PHP" sim="0.33"/>
 <csym name="Ruby" sim="0.33"/>
 <csym name="Perl" sim="0.33"/>
+</qsym>
+<qsym name="Perl">
+<csym name="Any" sim="0.5"/>
+<csym name="PHP" sim="0.33"/>
+<csym name="Ruby" sim="0.33"/>
+<csym name="Python" sim="0.33"/>
 </qsym>
 <qsym name="Java">
 <csym name="Any" sim="0.5"/>
@@ -558,6 +560,9 @@
     </desc>
     <desc name="Max User Base - Estimation Confidence" type="Float" min="0.01" max="1.0" mult="false" >
       <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="Max Traffic - Estimation" type="Integer" min="0" max="1000000" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
     </desc>
     <desc name="Minimum Browser" type="Symbol" mult="true" >
       <symbol value="IE8" />
@@ -608,9 +613,6 @@
 </qsym>
 </fct>
     </desc>
-    <desc name="Max Traffic - Estimation" type="Integer" min="0" max="1000000" mult="false" >
-      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
-    </desc>
     <desc name="Max User Base - Calculation" type="Integer" min="0" max="1500000" mult="false" >
       <fct name="Max User Base - Calculation" type="AdvancedInteger" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX">
         <point x="-1500000.0" y="0.0" />
@@ -648,23 +650,23 @@
     </desc>
     <desc name="Mobile Support" type="Symbol" mult="false" >
       <symbol value="Mobile Optimized" />
-      <symbol value="None" />
       <symbol value="Mobile Viewable" />
+      <symbol value="None" />
 <fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="false">
 <qsym name="Mobile Optimized">
 <csym name="Mobile Viewable" sim="0.5"/>
 </qsym>
+<qsym name="Mobile Viewable">
+</qsym>
 <qsym name="None">
 <csym name="Mobile Viewable" sim="0.5"/>
-</qsym>
-<qsym name="Mobile Viewable">
 </qsym>
 </fct>
     </desc>
     <desc name="Max Concurrent Traffic - Estimation Confidence" type="Float" min="0.01" max="1.0" mult="false" >
       <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
     </desc>
-    <amalgam name="Default" type="WEIGHTED_SUM" active="false" >
+    <amalgam name="Default" type="WEIGHTED_SUM" active="true" >
       <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
       <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
       <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
@@ -678,8 +680,8 @@
       <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
       <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
       <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
       <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
+      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
       <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
       <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
       <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
@@ -687,74 +689,120 @@
       <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
       <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
     </amalgam>
-    <amalgam name="AnyDatabase_AnyLanguage" type="WEIGHTED_SUM" active="false" >
-      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
+    <amalgam name="AnyDB_AnyLang_AnyOS_AnyServer" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="0.5"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1"/>
       <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
       <entry name="Database" active="true" fct="default function" weight="0.5"/>
-      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
+      <entry name="Web Server" active="true" fct="default function" weight="0.5"/>
       <entry name="Programming Language" active="true" fct="default function" weight="0.5"/>
       <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
       <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="5.0"/>
       <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
       <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
-      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1"/>
       <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
+      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1"/>
       <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
       <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
-      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1"/>
       <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
       <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
-      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1"/>
     </amalgam>
-    <amalgam name="AnyDatabase" type="WEIGHTED_SUM" active="true" >
-      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
-      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
-      <entry name="Database" active="true" fct="default function" weight="0.5"/>
-      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
-      <entry name="Programming Language" active="true" fct="default function" weight="5.0"/>
-      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
-      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
-      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
-      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
-      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
-      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
-      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
-      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+    <amalgam name="AnyDB_SpecificLang_AnyOS_AnyServer" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1"/>
+      <entry name="Database" active="true" fct="default function" weight="1"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="1"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="1"/>
+      <entry name="Max User Base - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="1"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="1"/>
+      <entry name="Max User Base - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="1"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
     </amalgam>
-    <amalgam name="SpecificDatabase" type="WEIGHTED_SUM" active="false" >
-      <entry name="Server Operating System" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Content Change Frequency" active="true" fct="default function" weight="1.0"/>
-      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1.0"/>
-      <entry name="Database" active="true" fct="default function" weight="10.0"/>
-      <entry name="Web Server" active="true" fct="default function" weight="1.0"/>
-      <entry name="Programming Language" active="true" fct="default function" weight="5.0"/>
-      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="10.0"/>
-      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="10.0"/>
-      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="2.0"/>
-      <entry name="Max User Base - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
-      <entry name="Max Traffic - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Minimum Browser" active="true" fct="default function" weight="2.0"/>
-      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="5.0"/>
-      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="10.0"/>
-      <entry name="Max User Base - Estimation" active="false" fct="default function" weight="1.0"/>
-      <entry name="Type of Video Required" active="true" fct="default function" weight="5.0"/>
-      <entry name="Mobile Support" active="true" fct="default function" weight="1.0"/>
-      <entry name="Max Concurrent Traffic - Estimation Confidence" active="false" fct="default function" weight="1.0"/>
+    <amalgam name="SpecificDB_AnyLang_SpecificOS_SpecificServer" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1"/>
+      <entry name="Database" active="true" fct="default function" weight="1"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="1"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="1"/>
+      <entry name="Max User Base - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="1"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="1"/>
+      <entry name="Max User Base - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="1"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+    </amalgam>
+    <amalgam name="AnyDB_SpecificLang_SpecificOS_SpecificServer" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1"/>
+      <entry name="Database" active="true" fct="default function" weight="1"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="1"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="1"/>
+      <entry name="Max User Base - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="1"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="1"/>
+      <entry name="Max User Base - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="1"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+    </amalgam>
+    <amalgam name="SpecificDB_SpecificLang_SpecificOS_SpecificServer" type="WEIGHTED_SUM" active="false" >
+      <entry name="Server Operating System" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Content Change Frequency" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Maintenence Staff" active="true" fct="default function" weight="1"/>
+      <entry name="Database" active="true" fct="default function" weight="1"/>
+      <entry name="Web Server" active="true" fct="default function" weight="1"/>
+      <entry name="Programming Language" active="true" fct="default function" weight="1"/>
+      <entry name="Expected Monthly Maintenance Budget" active="true" fct="Expected Monthly Maintenece Budget" weight="1"/>
+      <entry name="Max Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Calculation" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Number of Videos" active="true" fct="Number Of Videos" weight="1"/>
+      <entry name="Max User Base - Estimation Confidence" active="true" fct="default function" weight="1"/>
+      <entry name="Minimum Browser" active="true" fct="default function" weight="1"/>
+      <entry name="Max Traffic - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Max User Base - Calculation" active="true" fct="Max User Base - Calculation" weight="1"/>
+      <entry name="Expected Initial Budget" active="true" fct="Expected Initial Budget" weight="1"/>
+      <entry name="Max User Base - Estimation" active="true" fct="default function" weight="1"/>
+      <entry name="Type of Video Required" active="true" fct="default function" weight="1"/>
+      <entry name="Mobile Support" active="true" fct="default function" weight="1"/>
+      <entry name="Max Concurrent Traffic - Estimation Confidence" active="true" fct="default function" weight="1"/>
     </amalgam>
   </concept>
 </model>
